@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+:root {
+    --color1: #15131F;
+    --color2: #181138;
+    --color3: #2E216B;
+    --color4: #48416B;
+    --color5: #7C70B8;
+    --font-special: 'Bungee', Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header#cabecalho {
+    margin: auto;
+    text-align: center;
+    background-image: url(../imagens/pexels-david-besh-884788.jpg);
+    background-position: 45% 30%;
+}
+
+img#my-imagem {
+    width: 150px;
+    border: 3px solid var(--color2);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px #48416b70;
+    margin-top: 15px;
+}
+
+p {
+    padding: 5px;
+}
+
+menu#itens{
+    text-align: center;
+    padding-bottom: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.224);
+}
+
+div > h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 2.6em;
+}
+
+div > p {
+    text-align: justify;
+    text-indent: 7px;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+p > a {
+    text-decoration: none;
+    color: var(--color4);
+    background-color: var(--color5);
+    padding: 2px;
+    border-radius: 2px;
+}
+
+p > a:hover {
+    background-color: var(--color4);
+    color: var(--color5);
+    transition: .3s;
+}
+
+footer {
+    box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.224);
+    background-color: var(--color2);
+    text-align: center;
+}
+
+footer > h2 {
+    color: var(--color5);
+    font-family: var(--font-special);
+}
+
+label, li{
+    color: white;
+    font-weight: bolder;
+}
+
+img#contact-imagem {
+    display: inline;
+    width: 80px;
+    border-radius: 50% 5px;
+    border: 1px solid var(--color5);
+    padding: 5px;
+    margin: 3px;
+}
+
+img#contact-imagem:hover {
+    border-radius: 5px 50%;
+    transition: .5s;
+}
+
+textarea{
+    resize: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color5);
+}
+
+hr {
+    margin: 5px;
+}
+
+.social{
+    text-decoration: none;
+    color: wheat;
+}
+
+.button-control {
+    display: inline-block;
+    background-color: var(--color4);
+    padding: 5px;
+    margin: 1px;
+    width: 42vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-control:hover{
+    cursor: pointer;
+    background-color: var(--color5);
+    transition: .5s;
+}
+
+.font-special{
+    font-family: var(--font-special);
+    font-size: 1.5em;
+}
+
+p.code-font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.beautiful {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
+}

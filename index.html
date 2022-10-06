@@ -5,49 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo - Anderson Alencar</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skills.css">
 </head>
 <body>
-    <header>
-        <img src="imagens/ansu.jpg" alt="Ansu.jpg">
-        <h1>Anderson Alencar</h1>
-        <p>Desenvolvedor Web</p>
+    <header id="cabecalho">
+        <img id="my-imagem" src="imagens/ansu.jpg" alt="Ansu.jpg">
+        <h1 class="font-special">Anderson Alencar</h1>
+        <p class="code-font">Desenvolvedor Web</p>
         <menu id="itens">
-            <a href="#">Sobre</a>
-            <a href="#">Qualificações</a>
+            <p class="button-control" onclick="showMe()">&#x1F4E7;</p>
+            <p class="button-control" onclick="showSkills()">&#x1F493;</p>
         </menu>
     </header>
     <main>
         <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam repudiandae doloribus saepe accusamus nemo officiis aspernatur similique exercitationem numquam laborum ducimus expedita iure, sunt distinctio, obcaecati explicabo. Ab, obcaecati possimus.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis blanditiis eaque, nam voluptatum eos magnam eum dolorum praesentium. Possimus, dolorum? Corporis necessitatibus ab facere dicta earum repellat quibusdam laboriosam vel?</p>
+            <div id="skills">
+                <h1>Habilidades!</h1>
+                <div class="div-skills">
+                    <h2>HTML5</h2>
+                    <p>adfadadadadadad</p>
+                </div>
+                <div class="div-skills">
+                    <h2>CSS3</h2>
+                    <p>adadadasggsdag</p>
+                </div>
+                <div class="div-skills">
+                    <h2>JavaScript</h2>
+                    <p>adadadasggsdag</p>
+                </div>
+                <div class="div-skills">
+                    <h2>Python 3</h2>
+                    <p>adadadasggsdag</p>
+                </div>
+                <div class="div-skills">
+                    <h2>SQLite</h2>
+                    <p>adadadasggsdag</p>
+                </div>
+                <div class="div-skills">
+                    <h2>MySQL</h2>
+                    <p>adadadasggsdag</p>
+                </div>
+                <div class="div-skills">
+                    <h2>.lua</h2>
+                    <p>adadadasggsdag</p>
+                </div>
+                <div class="div-skills">
+                    <h2>PAWN</h2>
+                    <p>adfagdfhdhg</p>
+                </div>
+            </div>
+            <div id="my-history">
+                <h1>Sobre mim!</h1>
+                <p>Olá, Bom dia, meu nome é Anderson, porém mais conhecido como <span>Ansu</span>, sou amante da tecnologia desde 2017, tudo começo simples e inesperado, eu gostava muito de jogos (e gosto), jogava em servidores onlines do <abbr title="Grand Theft Auto">GTA</abbr> San Andreas há quase 7 anos na época, foi quando bateu a curiosidade de como tudo aquilo era criado, com isso comecei a estudar <a href="https://www.lua.org/" target="_blank"><strong class="special">.lua</strong></a> e <a href="https://sampwiki.blast.hk/wiki/Main_Page" target="_blank"><strong class="special">PAWN</strong></a>, linguagens usadas nos servidores.</p>
+                <p>Então foi estudando essas linguagens que cheguei ao ponto de aprender alguma que relacione com banco de dados, pois precisava salvar informações dos jogadores, consegui então desenvolver minhas habilidades <a href="https://pt.wikipedia.org/wiki/SQLite"  target="_blank"><strong class="special">SQLite</strong></a> e <a href="https://pt.wikipedia.org/wiki/Mysql"  target="_blank"><strong class="special">MySQL</strong></a></p>
+            </div>
         </section>
     </main>
     <footer>
         <h2>Fale conosco!</h2>
-        <div>
-            <img src="imagens/ansu.jpg" alt="Ansu.jpg">
+        <img id="contact-imagem" src="imagens/ansu.jpg" alt="Ansu.jpg">
+        <form action="" method="post" autocomplete="on">
+            <p><label for="email">E-mail: </label>
+            <input class="beautiful" type="text" name="email" id="email" autocomplete="email" placeholder="exemplo@gmail.com" minlength="10" maxlength="80" required></p>
 
-            <form action="" method="post" autocomplete="on">
-                <p>
-                    <label for="email">E-mail: </label>
-                    <input type="text" name="email" id="email" autocomplete="email" placeholder="exemplo@gmail.com">
-                </p>
-                <p>
-                    <label for="msg">Mensagem: </label>
-                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Fale conosco..."></textarea>
-                </p>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div>
-            <ul>
-                <li>&#x1F319; Instagram</li>
-                <li>&#x1F319; GitHub</li>
-                <li>&#x1F319; Discord</li>
-            </ul>
-            <p>&copy; Desenvolvido por JoverAnsu.</p>
-        </div>
+            <p><label for="msg">Mensagem: </label></p>
+            <p><textarea class="beautiful" name="msg" id="msg" cols="30" rows="10" placeholder="Fale conosco..." minlength="10" maxlength="300" required></textarea></p>
+
+            <p><button class="beautiful" type="submit">Enviar</button></p>
+        </form>
+        <hr>
+        <ul>
+            <li><a class="social" href="https://www.instagram.com/joveransu/" target="_blank">&#x1F319; Instagram</a></li>
+            <li><a class="social" href="https://github.com/joveransu" target="_blank">&#x1F319; GitHub</a></li>
+            <li><a class="social" href="#">&#x1F319; Discord</a></li>
+            <li>&copy; Desenvolvido por JoverAnsu.</li>
+        </ul>
     </footer>
+    <script src="scripts/changeText.js"></script>
 </body>
 </html>
