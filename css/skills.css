@@ -1,11 +1,45 @@
 @charset "UTF-8";
 
+div.div-skills > h2 {
+    background-image: linear-gradient(to bottom, yellow, transparent);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+span.destaque{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(208, 207, 207);
+    border-radius: 15px 0px;
+    margin: 2px;
+}
+
 div#skills{
     display: none;
+    margin: auto;
+    text-align: center;
+}
+
+.level {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    padding: 2px;
+    border: 1px solid black;
 }
 
 .div-skills{
-    text-align: center;
     padding: 15px;
 }
 
+
+.green {
+    background-color: lime;
+}
