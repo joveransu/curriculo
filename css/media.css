@@ -20,6 +20,11 @@
         text-shadow: 2px 2px 2px black;
     }
 
+    p.button-control{
+        margin: 15px;
+        width: 250px;
+    }
+    
     main{
         /*background-color: rgba(5, 49, 120, 0.486);*/
         background-color: rgba(128, 128, 128, 0.315);
@@ -30,6 +35,10 @@
         margin: auto;
         background-color: white;
         padding: 10px;
+    }
+
+    span {
+        display: block;
     }
 
     footer{
