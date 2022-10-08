@@ -120,6 +120,10 @@ hr {
     color: wheat;
 }
 
+.social:hover{
+    text-decoration: underline;
+}
+
 .button-control {
     display: inline-block;
     background-color: var(--color4);
